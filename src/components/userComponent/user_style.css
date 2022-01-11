@@ -1,0 +1,13 @@
+.wrap_for_users {
+    display: flex;
+    width: 400px ;
+    background: #3e4349;
+}
+.wrap_for_users a{
+    display: flex;
+    text-decoration: none;
+    color: #e88b08;
+    border: 1px solid black;
+    margin: 2px;
+}
+
