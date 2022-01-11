@@ -10,10 +10,12 @@ const Users = () => {
             .then(value => value.json())
             .then(value => setUsers(value))
     },[]);
-    return (
-        <div className>
-            {users.map(value => <User id={value.id} name={value.name}/>)}
 
+    return (
+        <div>
+            {
+                users.map(value => <User key={value.id} id={value.id} name={value.name}/>)
+            }
         </div>
     );
 };
