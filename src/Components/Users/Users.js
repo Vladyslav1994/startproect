@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+
 import User from "../User/User";
 
 const Users = () => {
@@ -10,8 +11,9 @@ const Users = () => {
             .then(value => setUsers(value))
     },[]);
     return (
-        <div>
+        <div className>
             {users.map(value => <User id={value.id} name={value.name}/>)}
+
         </div>
     );
 };
