@@ -1,0 +1,20 @@
+.airplane {
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    height: 250px;
+    border: 1px solid black;
+    margin: 5px;
+    background: aliceblue;
+}
+.airplane h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.airplane img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
