@@ -1,0 +1,15 @@
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+.user_details {
+    width: 500px;
+    height: 300px;
+    background: aliceblue;
+}
+.user_main {
+    width: 500px;
+    height: 300px;
+    background: azure;
+}
