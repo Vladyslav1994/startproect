@@ -5,7 +5,7 @@ const User = (props) => {
     return (
         <div>
             {id} {name} {username}
-            <button onClick={()=> getUserId(id)}>Get Details</button>
+            <button onClick={()=>getUserId(id)}>details</button>
         </div>
     );
 };

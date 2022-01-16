@@ -1,11 +1,10 @@
 import React from 'react';
 
-const Post = (props) => {
-    const {post: {id, name, body}} = props;
+const Post = ({post}) => {
+    const {id, name, body} = post;
     return (
         <div>
             {id} {name} {body}
-            {/*<button onClick={()=> (id)}>Get Details</button>*/}
         </div>
     );
 };
