@@ -17,7 +17,7 @@ const UsersDetails = ({user}) => {
     return (
         <div>
             <div>{id} {name} {username} {email}</div>
-            <button onClick={()=> posts && <Posts posts={posts}/>}>get post</button>
+            <button onClick={()=> posts && <div><Posts posts={posts}/></div>}>get post</button>
         </div>
     );
 };
