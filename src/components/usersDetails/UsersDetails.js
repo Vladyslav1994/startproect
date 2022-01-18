@@ -1,23 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
-import {postService} from "../servise_link/service_posts";
-import Posts from "../posts/Posts";
-
-
-const UsersDetails = ({user}) => {
+const UsersDetails = ({user, setUserId}) => {
     const {id, name, username, email} = user
-    const [posts, setPosts] = useState([]);
-
-    useEffect(() => {
-        postService.getPosts()
-            .then(value => setPosts([...value]))
-    },[]);
-
 
     return (
         <div>
             <div>{id} {name} {username} {email}</div>
-            <button onClick={()=> posts && <div><Posts posts={posts}/></div>}>get post</button>
+            <button onClick={()=> setUserId(id)}>get post</button>
         </div>
     );
 };
