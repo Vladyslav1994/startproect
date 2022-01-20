@@ -6,6 +6,7 @@ import PostsPage from "./pages/PostsPage/PostsPage";
 import Leyout from "./components/Leyout/Leyout";
 import User_details from "./components/user_details/User_details";
 import User_Posts from "./components/userPosts/User_Posts";
+import User_albums from "./components/user_Albums/User_albums";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                         <Route path={':id'} element={<User_details/>}>
                             <Route path={'posts'} element={<User_Posts/>}/>
                         </Route>
+                        <Route path={'album'} element={<User_albums/>}/>
                     </Route>
                     <Route path={'posts'} element={<PostsPage/>}/>
                 </Route>

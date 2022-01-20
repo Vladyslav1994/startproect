@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {postService} from "../../services/post.service";
-import {Outlet, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import Post from "./Post";
 
 const UserPosts = () => {

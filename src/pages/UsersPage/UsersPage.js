@@ -5,14 +5,12 @@ import {userService} from "../../services/user.service";
 import UserComponent from "../../components/userComponent/userComponent";
 import "./User_information.css"
 
-
-
 const UsersPage = () => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
         userService.getAll()
-            .then(value => setUsers(value))
+            .then(value => setUsers([...value]))
     },[]);
 
     return (
